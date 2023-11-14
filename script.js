@@ -126,6 +126,7 @@ const gameData = {
     }
 };
 
+
 function startGame() {
     updatePage('start');
 }
@@ -142,6 +143,16 @@ function updatePage(stageKey) {
         choicesSection.appendChild(button);
     });
     document.getElementById('story-image').src = stage.image;
+}
+
+function toggleAddendum() {
+    const addendumSection = document.getElementById('addendum');
+    addendumSection.style.display = addendumSection.style.display === 'none' ? 'block' : 'none';
+}
+
+function toggleNewSection() {
+    const newSection = document.getElementById('new-section');
+    newSection.style.display = newSection.style.display === 'none' ? 'block' : 'none';
 }
 
 window.onload = startGame;

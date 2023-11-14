@@ -34,7 +34,7 @@ header h1 {
     margin-bottom: 20px;
 }
 
-#choices button {
+#choices button, #toggleAddendum {
     background-color: #5D76A9;
     color: #fff;
     border: none;
@@ -45,7 +45,7 @@ header h1 {
     transition: background-color 0.3s;
 }
 
-#choices button:hover {
+#choices button:hover, #toggleAddendum:hover {
     background-color: #425a8c;
 }
 
@@ -59,4 +59,4 @@ header h1 {
 img {
     width: 500px;  /* Set your desired width */
     height: 450px; /* Set your desired height */
-  }
+}
